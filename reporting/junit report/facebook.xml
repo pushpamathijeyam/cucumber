@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="28.145538">
+<testcase classname="To validate forgetten password functionality in fb" name="to validate  forgotten password  using invalid mobile number" time="7.347476">
+<system-out><![CDATA[Given user have to be in fb login page......................................passed
+And user  have to click forgotten password..................................passed
+When user have to enter invalid mobile number...............................passed
+And user have to click search button........................................passed
+Then user have to be in identity account page...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate login functionality in fb" name="To validate login using invalid email and valid password" time="8.593427">
+<system-out><![CDATA[Given User have to be in fb login page......................................passed
+When Enter  invalid email and valid password................................passed
+And click login button......................................................passed
+Then invalid credentils page................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate login functionality in fb" name="To validate login using email and password" time="9.305103">
+<system-out><![CDATA[Given User have to be in fb login page......................................passed
+When Enter valid email and invalid password.................................passed
+And click login button......................................................passed
+Then invalid credentils page................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate login functionality in fb" name="To validate login using email and password 2" time="2.899532">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at org.baseclass.BaseClass.readDataFromExcel(BaseClass.java:343)&#13;&#10;&#9;at org.stepdef.LoginSteps.enter_invalid_email_and_invalid_password(LoginSteps.java:60)&#13;&#10;&#9;at ✽.Enter  invalid email and invalid password(src/test/resources/Featurefiles/login.feature:25)&#13;&#10;"><![CDATA[Given User have to be in fb login page......................................passed
+When Enter  invalid email and invalid password..............................failed
+And click login button......................................................skipped
+Then invalid credentils page................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.baseclass.BaseClass.readDataFromExcel(BaseClass.java:343)
+	at org.stepdef.LoginSteps.enter_invalid_email_and_invalid_password(LoginSteps.java:60)
+	at ✽.Enter  invalid email and invalid password(src/test/resources/Featurefiles/login.feature:25)
+]]></failure>
+</testcase>
+</testsuite>
