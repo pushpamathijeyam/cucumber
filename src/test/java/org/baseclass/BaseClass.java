@@ -136,7 +136,7 @@ public class BaseClass {
 
 	public static void contextAndClick(WebElement target) { // 18
 		a = new Actions(driver);
-		a.contextClick(target).perform();
+		a.contextClick(target).perform(); 
 	}
 
 	public static void keyUpCase(WebElement target, String destination) { // 19

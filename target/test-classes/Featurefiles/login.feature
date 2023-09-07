@@ -9,7 +9,7 @@ Feature: To validate login functionality in fb
     When Enter  invalid email and valid password
       | Name    | phoneno    | email             | password   |
       | ammu    | 9876543210 | jeyam@gmail.com   | amm890     |
-      | jegan   | 8825663423 | werrt@gmail.com   | jegan345   |
+      | jegan   | 8825663423 | werrt@w.com   | jegan345   |
       | murugan | 8765433221 | murugan@gmail.com | murugan456 |
     And click login button
     Then invalid credentils page
